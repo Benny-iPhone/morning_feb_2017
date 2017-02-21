@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="type your name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pAv-7i-Lbn">
+                                <rect key="frame" x="16" y="36" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textAction:" destination="BYZ-38-t0r" eventType="editingChanged" id="rxX-2p-Jcp"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ilu-yB-jJs">
+                                <rect key="frame" x="155" y="82" width="64" height="30"/>
+                                <state key="normal" title="Press Me"/>
+                                <connections>
+                                    <action selector="textAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pnl-BA-Z1u"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello world text comes here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zV0-iD-zNE">
+                                <rect key="frame" x="80.5" y="128" width="213" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pAv-7i-Lbn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="TDB-Mr-0AI"/>
+                            <constraint firstItem="Ilu-yB-jJs" firstAttribute="centerX" secondItem="pAv-7i-Lbn" secondAttribute="centerX" id="TJE-eJ-1QN"/>
+                            <constraint firstItem="Ilu-yB-jJs" firstAttribute="top" secondItem="pAv-7i-Lbn" secondAttribute="bottom" constant="16" id="Tmo-ED-rU8"/>
+                            <constraint firstItem="zV0-iD-zNE" firstAttribute="centerX" secondItem="Ilu-yB-jJs" secondAttribute="centerX" id="fgk-Rm-4yi"/>
+                            <constraint firstAttribute="trailing" secondItem="pAv-7i-Lbn" secondAttribute="trailing" constant="16" id="h86-7d-4d1"/>
+                            <constraint firstItem="zV0-iD-zNE" firstAttribute="top" secondItem="Ilu-yB-jJs" secondAttribute="bottom" constant="16" id="m2n-CX-qCy"/>
+                            <constraint firstItem="pAv-7i-Lbn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="zxY-ri-J3B"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label2" destination="zV0-iD-zNE" id="iOH-xm-Sby"/>
+                        <outlet property="textField" destination="pAv-7i-Lbn" id="lgg-de-lIA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="453.60000000000002" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+</document>
