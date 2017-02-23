@@ -27,7 +27,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="textAction:" destination="BYZ-38-t0r" eventType="editingChanged" id="rxX-2p-Jcp"/>
+                                    <action selector="textAction:" destination="BYZ-38-t0r" eventType="editingChanged" id="rbm-Xu-FtX"/>
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ilu-yB-jJs">
@@ -46,18 +46,18 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="pAv-7i-Lbn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="TDB-Mr-0AI"/>
-                            <constraint firstItem="Ilu-yB-jJs" firstAttribute="centerX" secondItem="pAv-7i-Lbn" secondAttribute="centerX" id="TJE-eJ-1QN"/>
-                            <constraint firstItem="Ilu-yB-jJs" firstAttribute="top" secondItem="pAv-7i-Lbn" secondAttribute="bottom" constant="16" id="Tmo-ED-rU8"/>
-                            <constraint firstItem="zV0-iD-zNE" firstAttribute="centerX" secondItem="Ilu-yB-jJs" secondAttribute="centerX" id="fgk-Rm-4yi"/>
-                            <constraint firstAttribute="trailing" secondItem="pAv-7i-Lbn" secondAttribute="trailing" constant="16" id="h86-7d-4d1"/>
-                            <constraint firstItem="zV0-iD-zNE" firstAttribute="top" secondItem="Ilu-yB-jJs" secondAttribute="bottom" constant="16" id="m2n-CX-qCy"/>
-                            <constraint firstItem="pAv-7i-Lbn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="zxY-ri-J3B"/>
+                            <constraint firstItem="zV0-iD-zNE" firstAttribute="centerX" secondItem="Ilu-yB-jJs" secondAttribute="centerX" id="CEe-5J-Xld"/>
+                            <constraint firstItem="pAv-7i-Lbn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="XNp-hI-gzp"/>
+                            <constraint firstAttribute="trailing" secondItem="pAv-7i-Lbn" secondAttribute="trailing" constant="16" id="fIU-mJ-lkl"/>
+                            <constraint firstItem="pAv-7i-Lbn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="hSw-Kc-QO1"/>
+                            <constraint firstItem="zV0-iD-zNE" firstAttribute="top" secondItem="Ilu-yB-jJs" secondAttribute="bottom" constant="16" id="nMe-d7-PTO"/>
+                            <constraint firstItem="Ilu-yB-jJs" firstAttribute="centerX" secondItem="pAv-7i-Lbn" secondAttribute="centerX" id="rIs-2X-ef8"/>
+                            <constraint firstItem="Ilu-yB-jJs" firstAttribute="top" secondItem="pAv-7i-Lbn" secondAttribute="bottom" constant="16" id="sZJ-Zs-eYP"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="label2" destination="zV0-iD-zNE" id="iOH-xm-Sby"/>
-                        <outlet property="textField" destination="pAv-7i-Lbn" id="lgg-de-lIA"/>
+                        <outlet property="label3" destination="zV0-iD-zNE" id="66p-j8-XfY"/>
+                        <outlet property="textField" destination="pAv-7i-Lbn" id="SyN-Pp-uRK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

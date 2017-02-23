@@ -12,15 +12,17 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var textField: UITextField!
     
-    @IBOutlet weak var label2: UILabel!
+    @IBOutlet weak var label3: UILabel!
     
     @IBAction func textAction(_ sender: AnyObject) {
 
+        let text = textField.text ?? ""
+        /*
         guard let text = textField.text else {
             return
-        }
+        }*/
         
-        label2.text = "hello " + text
+        label3.text = "hello " + text
         
     }
     
