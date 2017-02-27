@@ -30,6 +30,24 @@ enum ConvertType : Int{
         }
     }
     
+    func sourceLocale() -> Locale{
+        switch self {
+        case .gregToHeb:
+            return Locale(identifier: "en")
+        case .hebToGreg:
+            return Locale(identifier: "he")
+        }
+    }
+    
+    func destinationLocale() -> Locale{
+        switch self {
+        case .gregToHeb:
+            return Locale(identifier: "he")
+        case .hebToGreg:
+            return Locale(identifier: "en")
+        }
+    }
+    
     
     
 }

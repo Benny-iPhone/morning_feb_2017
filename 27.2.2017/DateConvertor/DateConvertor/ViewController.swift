@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     var type : ConvertType = .gregToHeb{
         didSet{
             datePicker.calendar = type.sourceCalendar()
+            datePicker.locale = type.sourceLocale()
             refreshAction()
         }
     }
@@ -25,6 +26,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         refreshAction()
+        label.textAlignment = .center
     }
     
     @IBAction func refreshAction() {
@@ -33,7 +35,7 @@ class ViewController: UIViewController {
         let formatter = DateFormatter()
         formatter.dateStyle = .long
         formatter.calendar = type.destinationCalendar()
-        //formatter.locale = Locale(identifier: "he")
+        formatter.locale = type.destinationLocale()
         
         label.text = formatter.string(from: date)
         
