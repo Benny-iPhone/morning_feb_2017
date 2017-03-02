@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="hY7-6p-jO6">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--שראל-->
+        <scene sceneID="5ns-XZ-8se">
+            <objects>
+                <viewController id="Ow9-Cu-hVD" customClass="FirstViewController" customModule="UIVIewController_LifeCycle" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7fV-dT-pSI"/>
+                        <viewControllerLayoutGuide type="bottom" id="nYO-Qo-yY1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lvQ-Se-xSD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="שראל" id="zSK-uz-WSA">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="ODH-cn-yGG"/>
+                        <barButtonItem key="rightBarButtonItem" title="Go To Red" id="uFf-hf-BYK">
+                            <connections>
+                                <segue destination="rME-L6-FPa" kind="show" id="nBe-78-uxb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ogk-zL-T3H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1543.2" y="109.29535232383809"/>
+        </scene>
+        <!--מסך שני-->
+        <scene sceneID="MAn-bg-7Va">
+            <objects>
+                <viewController id="rME-L6-FPa" customClass="SecondViewController" customModule="UIVIewController_LifeCycle" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9Pp-ZW-6S2"/>
+                        <viewControllerLayoutGuide type="bottom" id="sHj-be-XdZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ocg-Ua-L9W">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="מסך שני" id="hln-qf-1Jw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="POe-rU-ygs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2377" y="109"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cD1-p5-qMU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hY7-6p-jO6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="hqy-QZ-rhh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="L3G-2c-Au0">
+                        <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="Ow9-Cu-hVD" kind="relationship" relationship="rootViewController" id="9uc-q3-3YY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vaJ-1g-BFZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="604" y="109.29535232383809"/>
+        </scene>
+    </scenes>
+</document>
