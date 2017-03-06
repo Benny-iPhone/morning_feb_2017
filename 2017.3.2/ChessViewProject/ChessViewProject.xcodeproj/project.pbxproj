@@ -7,31 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B20E186B1E6816BD00F1EB82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20E186A1E6816BD00F1EB82 /* AppDelegate.swift */; };
-		B20E186D1E6816BD00F1EB82 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20E186C1E6816BD00F1EB82 /* ViewController.swift */; };
-		B20E18701E6816BD00F1EB82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B20E186E1E6816BD00F1EB82 /* Main.storyboard */; };
-		B20E18721E6816BD00F1EB82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B20E18711E6816BD00F1EB82 /* Assets.xcassets */; };
-		B20E18751E6816BD00F1EB82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B20E18731E6816BD00F1EB82 /* LaunchScreen.storyboard */; };
-		B20E187E1E681E1800F1EB82 /* BlueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20E187D1E681E1800F1EB82 /* BlueView.swift */; };
-		B20E18801E6821FD00F1EB82 /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20E187F1E6821FD00F1EB82 /* MyView.swift */; };
-		B20E18821E68337A00F1EB82 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20E18811E68337A00F1EB82 /* CircleView.swift */; };
+		B20E18901E68422E00F1EB82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20E188F1E68422E00F1EB82 /* AppDelegate.swift */; };
+		B20E18921E68422E00F1EB82 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20E18911E68422E00F1EB82 /* ViewController.swift */; };
+		B20E18951E68422E00F1EB82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B20E18931E68422E00F1EB82 /* Main.storyboard */; };
+		B20E18971E68422E00F1EB82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B20E18961E68422E00F1EB82 /* Assets.xcassets */; };
+		B20E189A1E68422E00F1EB82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B20E18981E68422E00F1EB82 /* LaunchScreen.storyboard */; };
+		B20E18A31E68423D00F1EB82 /* BlackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20E18A21E68423D00F1EB82 /* BlackView.swift */; };
+		B20E18A51E68424300F1EB82 /* WhiteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20E18A41E68424300F1EB82 /* WhiteView.swift */; };
+		B20E18A71E68424900F1EB82 /* ChessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20E18A61E68424900F1EB82 /* ChessView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B20E18671E6816BD00F1EB82 /* ViewProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B20E186A1E6816BD00F1EB82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B20E186C1E6816BD00F1EB82 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B20E186F1E6816BD00F1EB82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B20E18711E6816BD00F1EB82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B20E18741E6816BD00F1EB82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B20E18761E6816BD00F1EB82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B20E187D1E681E1800F1EB82 /* BlueView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueView.swift; sourceTree = "<group>"; };
-		B20E187F1E6821FD00F1EB82 /* MyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
-		B20E18811E68337A00F1EB82 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		B20E188C1E68422E00F1EB82 /* ChessViewProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChessViewProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B20E188F1E68422E00F1EB82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B20E18911E68422E00F1EB82 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B20E18941E68422E00F1EB82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B20E18961E68422E00F1EB82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B20E18991E68422E00F1EB82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B20E189B1E68422E00F1EB82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B20E18A21E68423D00F1EB82 /* BlackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlackView.swift; sourceTree = "<group>"; };
+		B20E18A41E68424300F1EB82 /* WhiteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhiteView.swift; sourceTree = "<group>"; };
+		B20E18A61E68424900F1EB82 /* ChessView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChessView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B20E18641E6816BD00F1EB82 /* Frameworks */ = {
+		B20E18891E68422E00F1EB82 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,42 +41,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B20E185E1E6816BD00F1EB82 = {
+		B20E18831E68422E00F1EB82 = {
 			isa = PBXGroup;
 			children = (
-				B20E18691E6816BD00F1EB82 /* ViewProject */,
-				B20E18681E6816BD00F1EB82 /* Products */,
+				B20E188E1E68422E00F1EB82 /* ChessViewProject */,
+				B20E188D1E68422E00F1EB82 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		B20E18681E6816BD00F1EB82 /* Products */ = {
+		B20E188D1E68422E00F1EB82 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B20E18671E6816BD00F1EB82 /* ViewProject.app */,
+				B20E188C1E68422E00F1EB82 /* ChessViewProject.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B20E18691E6816BD00F1EB82 /* ViewProject */ = {
+		B20E188E1E68422E00F1EB82 /* ChessViewProject */ = {
 			isa = PBXGroup;
 			children = (
-				B20E187C1E681DFE00F1EB82 /* view */,
-				B20E186A1E6816BD00F1EB82 /* AppDelegate.swift */,
-				B20E186C1E6816BD00F1EB82 /* ViewController.swift */,
-				B20E186E1E6816BD00F1EB82 /* Main.storyboard */,
-				B20E18711E6816BD00F1EB82 /* Assets.xcassets */,
-				B20E18731E6816BD00F1EB82 /* LaunchScreen.storyboard */,
-				B20E18761E6816BD00F1EB82 /* Info.plist */,
+				B20E18A11E68423400F1EB82 /* view */,
+				B20E188F1E68422E00F1EB82 /* AppDelegate.swift */,
+				B20E18911E68422E00F1EB82 /* ViewController.swift */,
+				B20E18931E68422E00F1EB82 /* Main.storyboard */,
+				B20E18961E68422E00F1EB82 /* Assets.xcassets */,
+				B20E18981E68422E00F1EB82 /* LaunchScreen.storyboard */,
+				B20E189B1E68422E00F1EB82 /* Info.plist */,
 			);
-			path = ViewProject;
+			path = ChessViewProject;
 			sourceTree = "<group>";
 		};
-		B20E187C1E681DFE00F1EB82 /* view */ = {
+		B20E18A11E68423400F1EB82 /* view */ = {
 			isa = PBXGroup;
 			children = (
-				B20E187D1E681E1800F1EB82 /* BlueView.swift */,
-				B20E187F1E6821FD00F1EB82 /* MyView.swift */,
-				B20E18811E68337A00F1EB82 /* CircleView.swift */,
+				B20E18A21E68423D00F1EB82 /* BlackView.swift */,
+				B20E18A41E68424300F1EB82 /* WhiteView.swift */,
+				B20E18A61E68424900F1EB82 /* ChessView.swift */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -84,40 +84,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B20E18661E6816BD00F1EB82 /* ViewProject */ = {
+		B20E188B1E68422E00F1EB82 /* ChessViewProject */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B20E18791E6816BD00F1EB82 /* Build configuration list for PBXNativeTarget "ViewProject" */;
+			buildConfigurationList = B20E189E1E68422E00F1EB82 /* Build configuration list for PBXNativeTarget "ChessViewProject" */;
 			buildPhases = (
-				B20E18631E6816BD00F1EB82 /* Sources */,
-				B20E18641E6816BD00F1EB82 /* Frameworks */,
-				B20E18651E6816BD00F1EB82 /* Resources */,
+				B20E18881E68422E00F1EB82 /* Sources */,
+				B20E18891E68422E00F1EB82 /* Frameworks */,
+				B20E188A1E68422E00F1EB82 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ViewProject;
-			productName = ViewProject;
-			productReference = B20E18671E6816BD00F1EB82 /* ViewProject.app */;
+			name = ChessViewProject;
+			productName = ChessViewProject;
+			productReference = B20E188C1E68422E00F1EB82 /* ChessViewProject.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B20E185F1E6816BD00F1EB82 /* Project object */ = {
+		B20E18841E68422E00F1EB82 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = xcoder.solutions;
 				TargetAttributes = {
-					B20E18661E6816BD00F1EB82 = {
+					B20E188B1E68422E00F1EB82 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = B20E18621E6816BD00F1EB82 /* Build configuration list for PBXProject "ViewProject" */;
+			buildConfigurationList = B20E18871E68422E00F1EB82 /* Build configuration list for PBXProject "ChessViewProject" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -125,57 +125,57 @@
 				en,
 				Base,
 			);
-			mainGroup = B20E185E1E6816BD00F1EB82;
-			productRefGroup = B20E18681E6816BD00F1EB82 /* Products */;
+			mainGroup = B20E18831E68422E00F1EB82;
+			productRefGroup = B20E188D1E68422E00F1EB82 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B20E18661E6816BD00F1EB82 /* ViewProject */,
+				B20E188B1E68422E00F1EB82 /* ChessViewProject */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B20E18651E6816BD00F1EB82 /* Resources */ = {
+		B20E188A1E68422E00F1EB82 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B20E18751E6816BD00F1EB82 /* LaunchScreen.storyboard in Resources */,
-				B20E18721E6816BD00F1EB82 /* Assets.xcassets in Resources */,
-				B20E18701E6816BD00F1EB82 /* Main.storyboard in Resources */,
+				B20E189A1E68422E00F1EB82 /* LaunchScreen.storyboard in Resources */,
+				B20E18971E68422E00F1EB82 /* Assets.xcassets in Resources */,
+				B20E18951E68422E00F1EB82 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B20E18631E6816BD00F1EB82 /* Sources */ = {
+		B20E18881E68422E00F1EB82 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B20E18801E6821FD00F1EB82 /* MyView.swift in Sources */,
-				B20E18821E68337A00F1EB82 /* CircleView.swift in Sources */,
-				B20E186D1E6816BD00F1EB82 /* ViewController.swift in Sources */,
-				B20E187E1E681E1800F1EB82 /* BlueView.swift in Sources */,
-				B20E186B1E6816BD00F1EB82 /* AppDelegate.swift in Sources */,
+				B20E18921E68422E00F1EB82 /* ViewController.swift in Sources */,
+				B20E18A71E68424900F1EB82 /* ChessView.swift in Sources */,
+				B20E18901E68422E00F1EB82 /* AppDelegate.swift in Sources */,
+				B20E18A51E68424300F1EB82 /* WhiteView.swift in Sources */,
+				B20E18A31E68423D00F1EB82 /* BlackView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B20E186E1E6816BD00F1EB82 /* Main.storyboard */ = {
+		B20E18931E68422E00F1EB82 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B20E186F1E6816BD00F1EB82 /* Base */,
+				B20E18941E68422E00F1EB82 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		B20E18731E6816BD00F1EB82 /* LaunchScreen.storyboard */ = {
+		B20E18981E68422E00F1EB82 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B20E18741E6816BD00F1EB82 /* Base */,
+				B20E18991E68422E00F1EB82 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -183,7 +183,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		B20E18771E6816BD00F1EB82 /* Debug */ = {
+		B20E189C1E68422E00F1EB82 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -232,7 +232,7 @@
 			};
 			name = Debug;
 		};
-		B20E18781E6816BD00F1EB82 /* Release */ = {
+		B20E189D1E68422E00F1EB82 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -274,25 +274,25 @@
 			};
 			name = Release;
 		};
-		B20E187A1E6816BD00F1EB82 /* Debug */ = {
+		B20E189F1E68422E00F1EB82 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = ViewProject/Info.plist;
+				INFOPLIST_FILE = ChessViewProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = xcoder.solutions.ViewProject;
+				PRODUCT_BUNDLE_IDENTIFIER = xcoder.solutions.ChessViewProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		B20E187B1E6816BD00F1EB82 /* Release */ = {
+		B20E18A01E68422E00F1EB82 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = ViewProject/Info.plist;
+				INFOPLIST_FILE = ChessViewProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = xcoder.solutions.ViewProject;
+				PRODUCT_BUNDLE_IDENTIFIER = xcoder.solutions.ChessViewProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -301,24 +301,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B20E18621E6816BD00F1EB82 /* Build configuration list for PBXProject "ViewProject" */ = {
+		B20E18871E68422E00F1EB82 /* Build configuration list for PBXProject "ChessViewProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B20E18771E6816BD00F1EB82 /* Debug */,
-				B20E18781E6816BD00F1EB82 /* Release */,
+				B20E189C1E68422E00F1EB82 /* Debug */,
+				B20E189D1E68422E00F1EB82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B20E18791E6816BD00F1EB82 /* Build configuration list for PBXNativeTarget "ViewProject" */ = {
+		B20E189E1E68422E00F1EB82 /* Build configuration list for PBXNativeTarget "ChessViewProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B20E187A1E6816BD00F1EB82 /* Debug */,
-				B20E187B1E6816BD00F1EB82 /* Release */,
+				B20E189F1E68422E00F1EB82 /* Debug */,
+				B20E18A01E68422E00F1EB82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = B20E185F1E6816BD00F1EB82 /* Project object */;
+	rootObject = B20E18841E68422E00F1EB82 /* Project object */;
 }

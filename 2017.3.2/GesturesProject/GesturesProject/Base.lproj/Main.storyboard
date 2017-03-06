@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GesturesProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yqE-f9-n3j">
+                                <rect key="frame" x="147.5" y="293.5" width="80" height="80"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="gCp-pl-TKB"/>
+                                    <constraint firstAttribute="width" constant="80" id="xpx-Wn-37r"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="uei-bp-b4C" appends="YES" id="04A-pt-RJU"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="yqE-f9-n3j" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="IHz-vT-iq9"/>
+                            <constraint firstItem="yqE-f9-n3j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lez-SQ-aem"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="rnZ-nh-hg7" appends="YES" id="4ww-gl-Zwa"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="targetView" destination="yqE-f9-n3j" id="YZG-ZC-3HD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="rnZ-nh-hg7">
+                    <connections>
+                        <action selector="tapAction:" destination="BYZ-38-t0r" id="Ybv-Fk-Zko"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="uei-bp-b4C">
+                    <connections>
+                        <action selector="panAction:" destination="BYZ-38-t0r" id="5vS-d7-zYH"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+        </scene>
+    </scenes>
+</document>

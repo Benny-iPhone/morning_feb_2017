@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5ri-xF-wd7">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Homework" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="7QR-An-PNX">
+                                <rect key="frame" x="37.5" y="28" width="300" height="29"/>
+                                <segments>
+                                    <segment title="Black"/>
+                                    <segment title="Red"/>
+                                    <segment title="Green"/>
+                                    <segment title="Blue"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentedControlAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="qwQ-Nw-y6Q"/>
+                                </connections>
+                            </segmentedControl>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Obl-gd-X4L">
+                                <rect key="frame" x="37" y="64" width="300" height="84"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7QR-An-PNX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5xU-i9-t6U"/>
+                            <constraint firstItem="Obl-gd-X4L" firstAttribute="height" secondItem="7QR-An-PNX" secondAttribute="height" multiplier="3" id="JFp-ds-RAK"/>
+                            <constraint firstItem="Obl-gd-X4L" firstAttribute="width" secondItem="7QR-An-PNX" secondAttribute="width" id="Js0-Vw-f8f"/>
+                            <constraint firstItem="7QR-An-PNX" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="Npm-mN-TlV"/>
+                            <constraint firstItem="Obl-gd-X4L" firstAttribute="centerX" secondItem="7QR-An-PNX" secondAttribute="centerX" id="bTD-vW-EJt"/>
+                            <constraint firstItem="Obl-gd-X4L" firstAttribute="top" secondItem="7QR-An-PNX" secondAttribute="bottom" constant="8" id="l9u-j5-oCm"/>
+                            <constraint firstItem="7QR-An-PNX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="njr-zb-jil"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="q15-or-sNv"/>
+                    <connections>
+                        <outlet property="colorView" destination="Obl-gd-X4L" id="1hA-kb-H4l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="967" y="-119"/>
+        </scene>
+        <!--Double Tap View Controller-->
+        <scene sceneID="VkD-2m-Ibh">
+            <objects>
+                <viewController id="tEd-TU-ebM" customClass="DoubleTapViewController" customModule="Homework" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fiI-ch-5OY"/>
+                        <viewControllerLayoutGuide type="bottom" id="suw-IN-RyR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="obI-89-iPe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pgs-lH-alW">
+                                <rect key="frame" x="93.5" y="240" width="188" height="187.5"/>
+                                <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="boX-6l-L2x" appends="YES" id="SOU-pw-gX9"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Pgs-lH-alW" firstAttribute="width" secondItem="obI-89-iPe" secondAttribute="width" multiplier="0.5" id="C1j-V5-0Nz"/>
+                            <constraint firstItem="Pgs-lH-alW" firstAttribute="centerY" secondItem="obI-89-iPe" secondAttribute="centerY" id="Q0K-eY-ZWY"/>
+                            <constraint firstItem="Pgs-lH-alW" firstAttribute="centerX" secondItem="obI-89-iPe" secondAttribute="centerX" id="b52-V4-FwH"/>
+                            <constraint firstItem="Pgs-lH-alW" firstAttribute="height" secondItem="obI-89-iPe" secondAttribute="width" multiplier="0.5" id="oTQ-fr-7Mk"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="topRated" id="DZi-NZ-L3J"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jxa-Nu-7zi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="boX-6l-L2x">
+                    <connections>
+                        <action selector="tapAction:" destination="tEd-TU-ebM" id="Ech-Ve-TTE"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="966" y="578"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="jEY-ti-IGn">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="5ri-xF-wd7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="hAJ-Lr-6if">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="ySo-c2-Etm"/>
+                        <segue destination="tEd-TU-ebM" kind="relationship" relationship="viewControllers" id="p7Q-fq-bk1"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p84-7r-UK5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>

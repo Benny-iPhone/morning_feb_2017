@@ -39,7 +39,7 @@
                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VXP-Sv-Nae">
-                                <rect key="frame" x="119" y="324" width="240" height="128"/>
+                                <rect key="frame" x="119" y="383" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kvc-au-EXR">
@@ -64,7 +64,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B8E-Kf-HX5" customClass="MyView" customModule="ViewProject" customModuleProvider="target">
-                                <rect key="frame" x="67" y="141" width="240" height="128"/>
+                                <rect key="frame" x="119" y="20" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
@@ -76,6 +76,19 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aUA-Hn-bo9" customClass="CircleView" customModule="ViewProject" customModuleProvider="target">
+                                <rect key="frame" x="119" y="186" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="circleWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="circleColor">
+                                        <color key="value" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
