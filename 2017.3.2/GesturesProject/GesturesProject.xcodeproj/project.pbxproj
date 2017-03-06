@@ -12,6 +12,10 @@
 		B20E18D81E6858DB00F1EB82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B20E18D61E6858DB00F1EB82 /* Main.storyboard */; };
 		B20E18DA1E6858DB00F1EB82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B20E18D91E6858DB00F1EB82 /* Assets.xcassets */; };
 		B20E18DD1E6858DB00F1EB82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B20E18DB1E6858DB00F1EB82 /* LaunchScreen.storyboard */; };
+		B2837FC51E6D5AAA008FE580 /* PinchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2837FC41E6D5AAA008FE580 /* PinchViewController.swift */; };
+		B2837FC71E6D6268008FE580 /* RotationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2837FC61E6D6268008FE580 /* RotationViewController.swift */; };
+		B2837FC91E6D672F008FE580 /* TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2837FC81E6D672F008FE580 /* TwoViewController.swift */; };
+		B2837FCB1E6D6A2A008FE580 /* OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2837FCA1E6D6A2A008FE580 /* OneViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		B20E18D91E6858DB00F1EB82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B20E18DC1E6858DB00F1EB82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B20E18DE1E6858DB00F1EB82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2837FC41E6D5AAA008FE580 /* PinchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinchViewController.swift; sourceTree = "<group>"; };
+		B2837FC61E6D6268008FE580 /* RotationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotationViewController.swift; sourceTree = "<group>"; };
+		B2837FC81E6D672F008FE580 /* TwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoViewController.swift; sourceTree = "<group>"; };
+		B2837FCA1E6D6A2A008FE580 /* OneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,10 @@
 			children = (
 				B20E18D21E6858DB00F1EB82 /* AppDelegate.swift */,
 				B20E18D41E6858DB00F1EB82 /* ViewController.swift */,
+				B2837FC41E6D5AAA008FE580 /* PinchViewController.swift */,
+				B2837FC61E6D6268008FE580 /* RotationViewController.swift */,
+				B2837FC81E6D672F008FE580 /* TwoViewController.swift */,
+				B2837FCA1E6D6A2A008FE580 /* OneViewController.swift */,
 				B20E18D61E6858DB00F1EB82 /* Main.storyboard */,
 				B20E18D91E6858DB00F1EB82 /* Assets.xcassets */,
 				B20E18DB1E6858DB00F1EB82 /* LaunchScreen.storyboard */,
@@ -136,8 +148,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2837FC91E6D672F008FE580 /* TwoViewController.swift in Sources */,
 				B20E18D51E6858DB00F1EB82 /* ViewController.swift in Sources */,
 				B20E18D31E6858DB00F1EB82 /* AppDelegate.swift in Sources */,
+				B2837FCB1E6D6A2A008FE580 /* OneViewController.swift in Sources */,
+				B2837FC71E6D6268008FE580 /* RotationViewController.swift in Sources */,
+				B2837FC51E6D5AAA008FE580 /* PinchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +313,7 @@
 				B20E18E31E6858DB00F1EB82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
