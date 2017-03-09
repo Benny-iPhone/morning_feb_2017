@@ -13,11 +13,18 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var colorButton: UIBarButtonItem!
 
+    @IBOutlet weak var undoButton: UIBarButtonItem!
+    @IBOutlet weak var redoButton: UIBarButtonItem!
+    
     @IBOutlet weak var toolbarBottomLayout: NSLayoutConstraint!
     @IBOutlet weak var drawView: DrawView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        drawView.delegate = self
+        
+        refreshUndoRedoButtons()
         
         for i in stride(from: 0, to: 255, by: 25){
             for j in stride(from: 0, to: 255, by: 25){
@@ -31,13 +38,26 @@ class ViewController: UIViewController {
         }
     }
     
+    func refreshUndoRedoButtons(){
+        undoButton.isEnabled = drawView.canUndo
+        redoButton.isEnabled = drawView.canRedo
+    }
+    
     @IBAction func clearAction(_ sender: Any) {
         drawView.clear()
+        refreshUndoRedoButtons()
     }
     
     @IBAction func undoAction(_ sender: Any) {
         drawView.undo()
+        refreshUndoRedoButtons()
     }
+    
+    @IBAction func redoAction(_ sender: Any) {
+        drawView.redo()
+        refreshUndoRedoButtons()
+    }
+    
 
     @IBAction func sliderAction(_ sender: UISlider) {
         drawView.lineWidth = CGFloat(sender.value)
@@ -61,6 +81,12 @@ class ViewController: UIViewController {
         UIView.animate(withDuration: 0.3) { 
             self.view.layoutIfNeeded()
         }
+    }
+}
+
+extension ViewController : DrawViewDelegate{
+    func drawView(_ drawView: DrawView, didStartPathAt point: CGPoint) {
+        refreshUndoRedoButtons()
     }
 }
 

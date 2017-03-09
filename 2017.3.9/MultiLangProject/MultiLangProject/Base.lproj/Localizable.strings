@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  MultiLangProject
+
+  Created by Benny Davidovitz on 09/03/2017.
+  Copyright © 2017 xcoder.solutions. All rights reserved.
+*/
+
+"key" = "value";
+"hello_text" = "Hello World";
+"button_title" = "press me";

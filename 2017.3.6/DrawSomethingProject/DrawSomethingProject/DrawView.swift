@@ -8,16 +8,34 @@
 
 import UIKit
 
-class DrawView: UIView {
+protocol DrawViewDelegate {
+    func drawView(_ drawView : DrawView, didStartPathAt point : CGPoint)
+}
 
+class DrawView: UIView {
+    
     //MARK: - Public -
+    var delegate : DrawViewDelegate?
+    
     var lineWidth : CGFloat = 1
     var color : UIColor?
+    var canUndo : Bool{
+        get{
+            return beziers.count > 0
+        }
+    }
+    
+    var canRedo : Bool{
+        get{
+            return redoBeziers.isEmpty == false
+        }
+    }
     
     func clear(){
         //bezier = UIBezierPath()
         //bezier.removeAllPoints()
         beziers = []
+        redoBeziers = []
         setNeedsDisplay()
     }
     
@@ -26,12 +44,26 @@ class DrawView: UIView {
             return
         }
         
-        beziers.removeLast()
+        let oldB = beziers.removeLast()
+        redoBeziers.append(oldB)
+        
+        setNeedsDisplay()
+    }
+    
+    func redo(){
+        guard redoBeziers.isEmpty == false else {
+            return
+        }
+        
+        let b = redoBeziers.removeLast()
+        beziers.append(b)
+        
         setNeedsDisplay()
     }
     
     //MARK: - Internal -
     
+    private var redoBeziers : [ColorBezierPath] = []
     private var beziers : [ColorBezierPath] = []
     
     //from storyboard
@@ -52,6 +84,12 @@ class DrawView: UIView {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
         
+        //clear redo array if started new path
+        if !redoBeziers.isEmpty{
+            redoBeziers = []
+        }
+        
+        //create new path
         let p = touches.first!.location(in: self)
         //bezier.move(to: p)
         let b = ColorBezierPath()
@@ -60,6 +98,8 @@ class DrawView: UIView {
         b.move(to: p)
         
         beziers.append(b)
+        
+        delegate?.drawView(self, didStartPathAt: p)
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
