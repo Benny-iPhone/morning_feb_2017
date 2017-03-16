@@ -14,6 +14,8 @@
 		B2E3969C1E76873B00B507F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2E3969A1E76873B00B507F9 /* LaunchScreen.storyboard */; };
 		B2E396A51E76920400B507F9 /* CheckboxImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E396A41E76920400B507F9 /* CheckboxImageView.swift */; };
 		B2E396A71E7696FA00B507F9 /* ImageUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E396A61E7696FA00B507F9 /* ImageUtils.swift */; };
+		B2E396A91E76A47000B507F9 /* SpriteSheetImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E396A81E76A47000B507F9 /* SpriteSheetImageView.swift */; };
+		B2E396C91E76CADA00B507F9 /* RoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E396C81E76CADA00B507F9 /* RoundedImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		B2E3969D1E76873B00B507F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2E396A41E76920400B507F9 /* CheckboxImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckboxImageView.swift; sourceTree = "<group>"; };
 		B2E396A61E7696FA00B507F9 /* ImageUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageUtils.swift; sourceTree = "<group>"; };
+		B2E396A81E76A47000B507F9 /* SpriteSheetImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpriteSheetImageView.swift; sourceTree = "<group>"; };
+		B2E396C81E76CADA00B507F9 /* RoundedImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,8 @@
 			children = (
 				B2E396A41E76920400B507F9 /* CheckboxImageView.swift */,
 				B2E396A61E7696FA00B507F9 /* ImageUtils.swift */,
+				B2E396A81E76A47000B507F9 /* SpriteSheetImageView.swift */,
+				B2E396C81E76CADA00B507F9 /* RoundedImageView.swift */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -152,7 +158,9 @@
 			files = (
 				B2E396941E76873B00B507F9 /* ViewController.swift in Sources */,
 				B2E396921E76873B00B507F9 /* AppDelegate.swift in Sources */,
+				B2E396C91E76CADA00B507F9 /* RoundedImageView.swift in Sources */,
 				B2E396A51E76920400B507F9 /* CheckboxImageView.swift in Sources */,
+				B2E396A91E76A47000B507F9 /* SpriteSheetImageView.swift in Sources */,
 				B2E396A71E7696FA00B507F9 /* ImageUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

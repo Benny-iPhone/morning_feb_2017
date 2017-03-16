@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CustomControlProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mmd-o1-Arc" customClass="AppControl" customModule="CustomControlProject" customModuleProvider="target">
+                                <rect key="frame" x="104.5" y="305" width="166" height="57"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="privacy" translatesAutoresizingMaskIntoConstraints="NO" id="9rj-Zq-85B">
+                                        <rect key="frame" x="4" y="16" width="25" height="25"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Secure Login via Mail" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LtP-fd-Kdu">
+                                        <rect key="frame" x="33" y="8" width="100" height="41"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="100" id="gFi-gn-BdA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="message" translatesAutoresizingMaskIntoConstraints="NO" id="IGf-xz-Nml">
+                                        <rect key="frame" x="137" y="16" width="25" height="25"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="IGf-xz-Nml" secondAttribute="trailing" constant="4" id="2uk-pz-iCj"/>
+                                    <constraint firstItem="LtP-fd-Kdu" firstAttribute="height" relation="greaterThanOrEqual" secondItem="9rj-Zq-85B" secondAttribute="height" id="5aD-lh-aiz"/>
+                                    <constraint firstItem="IGf-xz-Nml" firstAttribute="centerY" secondItem="mmd-o1-Arc" secondAttribute="centerY" id="Bkq-1b-1H0"/>
+                                    <constraint firstItem="IGf-xz-Nml" firstAttribute="leading" secondItem="LtP-fd-Kdu" secondAttribute="trailing" constant="4" id="CyC-mO-lJF"/>
+                                    <constraint firstItem="9rj-Zq-85B" firstAttribute="leading" secondItem="mmd-o1-Arc" secondAttribute="leading" constant="4" id="Uia-da-PX0"/>
+                                    <constraint firstItem="LtP-fd-Kdu" firstAttribute="top" secondItem="mmd-o1-Arc" secondAttribute="top" constant="8" id="YTJ-Ex-lhH"/>
+                                    <constraint firstItem="LtP-fd-Kdu" firstAttribute="leading" secondItem="9rj-Zq-85B" secondAttribute="trailing" constant="4" id="aDW-hU-hwB"/>
+                                    <constraint firstAttribute="bottom" secondItem="LtP-fd-Kdu" secondAttribute="bottom" constant="8" id="b8W-AS-K6W"/>
+                                    <constraint firstItem="9rj-Zq-85B" firstAttribute="centerY" secondItem="mmd-o1-Arc" secondAttribute="centerY" id="ucZ-uW-gux"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="controlPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l4v-6n-IY5"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mmd-o1-Arc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ReE-6D-z00"/>
+                            <constraint firstItem="mmd-o1-Arc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="d9B-4r-NKB"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="message" width="25" height="25"/>
+        <image name="privacy" width="25" height="25"/>
+    </resources>
+</document>
