@@ -12,6 +12,11 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var label: UILabel!
     
+    @IBAction func didEndOnExitAction(_ sender: UITextField) {
+        
+        sender.resignFirstResponder()
+    }
+    
     @IBAction func phoneChangedAction(_ sender: UITextField) {
         guard let text = sender.text else {
             return

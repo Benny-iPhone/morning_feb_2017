@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ControlsProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.001" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="Vts-yX-vTt">
+                                <rect key="frame" x="18" y="40" width="339" height="31"/>
+                                <color key="minimumTrackTintColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="sliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="wR2-3w-yUj"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nd9-K5-JgX">
+                                <rect key="frame" x="20" y="78" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="0LH-Iw-8hU">
+                                <rect key="frame" x="-111" y="319" width="305" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="NyK-ZW-E1a"/>
+                                </constraints>
+                            </slider>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" onImage="trump_off" offImage="trump_off" translatesAutoresizingMaskIntoConstraints="NO" id="a4V-jy-BtM">
+                                <rect key="frame" x="163" y="130" width="51" height="31"/>
+                                <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="onTintColor" red="0.1647058824" green="0.65490196079999996" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="thumbTintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="switchAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="YVo-RQ-8dr"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" onImage="trump_off" offImage="trump_on" translatesAutoresizingMaskIntoConstraints="NO" id="wd5-y2-0HR">
+                                <rect key="frame" x="163" y="241" width="51" height="31"/>
+                                <color key="onTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="killAppSwitchAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="l1q-Lc-nQO"/>
+                                </connections>
+                            </switch>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" wraps="YES" value="10" minimumValue="10" maximumValue="15" stepValue="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="qms-Rw-eBR">
+                                <rect key="frame" x="261" y="89" width="94" height="29"/>
+                                <color key="tintColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="stepperAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="MSu-Hj-0G4"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQs-rK-aic">
+                                <rect key="frame" x="313" y="140" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ohl-pM-BsD">
+                                <rect key="frame" x="16" y="402" width="343" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                    <segment title="" image="trump_off"/>
+                                    <segment title="" image="trump_on"/>
+                                </segments>
+                                <color key="tintColor" red="1" green="0.49803921569999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Vts-yX-vTt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="1qt-th-ShY"/>
+                            <constraint firstItem="a4V-jy-BtM" firstAttribute="top" secondItem="Vts-yX-vTt" secondAttribute="bottom" constant="60" id="8w3-Pc-9is"/>
+                            <constraint firstItem="qms-Rw-eBR" firstAttribute="top" secondItem="Vts-yX-vTt" secondAttribute="bottom" constant="19" id="JkP-Yr-k8M"/>
+                            <constraint firstItem="0LH-Iw-8hU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="PNx-mA-t3B"/>
+                            <constraint firstItem="aQs-rK-aic" firstAttribute="trailing" secondItem="qms-Rw-eBR" secondAttribute="trailing" id="Snw-Sc-cp4"/>
+                            <constraint firstItem="0LH-Iw-8hU" firstAttribute="centerX" secondItem="Nd9-K5-JgX" secondAttribute="centerX" id="W1C-9L-DSW"/>
+                            <constraint firstItem="Vts-yX-vTt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="YLO-5G-UP3"/>
+                            <constraint firstAttribute="trailing" secondItem="Vts-yX-vTt" secondAttribute="trailing" constant="20" id="bGz-to-7OH"/>
+                            <constraint firstItem="wd5-y2-0HR" firstAttribute="top" secondItem="a4V-jy-BtM" secondAttribute="bottom" constant="80" id="gon-ue-hab"/>
+                            <constraint firstItem="wd5-y2-0HR" firstAttribute="centerX" secondItem="a4V-jy-BtM" secondAttribute="centerX" id="lKY-B7-Oza"/>
+                            <constraint firstItem="a4V-jy-BtM" firstAttribute="centerX" secondItem="Vts-yX-vTt" secondAttribute="centerX" id="ort-hs-rx0"/>
+                            <constraint firstItem="qms-Rw-eBR" firstAttribute="trailing" secondItem="Vts-yX-vTt" secondAttribute="trailing" id="pVm-kA-8Kv"/>
+                            <constraint firstItem="Nd9-K5-JgX" firstAttribute="top" secondItem="Vts-yX-vTt" secondAttribute="bottom" constant="8" id="qyG-CM-Xld"/>
+                            <constraint firstItem="Nd9-K5-JgX" firstAttribute="leading" secondItem="Vts-yX-vTt" secondAttribute="leading" id="uou-lv-eEw"/>
+                            <constraint firstItem="aQs-rK-aic" firstAttribute="top" secondItem="qms-Rw-eBR" secondAttribute="bottom" constant="22" id="vb5-tG-VGM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="killSwitch" destination="wd5-y2-0HR" id="3ek-Tx-PWZ"/>
+                        <outlet property="label" destination="Nd9-K5-JgX" id="Cbx-fY-cUY"/>
+                        <outlet property="slider" destination="Vts-yX-vTt" id="SQj-r6-wlm"/>
+                        <outlet property="stepper" destination="qms-Rw-eBR" id="NKA-Pg-FqZ"/>
+                        <outlet property="stepperLabel" destination="aQs-rK-aic" id="noN-uu-6KC"/>
+                        <outlet property="verticalSlider" destination="0LH-Iw-8hU" id="kQr-ek-AcR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="trump_off" width="50" height="50"/>
+        <image name="trump_on" width="48" height="48"/>
+    </resources>
+</document>

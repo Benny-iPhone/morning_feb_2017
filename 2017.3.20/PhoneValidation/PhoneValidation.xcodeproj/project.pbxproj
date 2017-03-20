@@ -14,6 +14,8 @@
 		B20461BF1E7FBD5500C88AED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B20461BE1E7FBD5500C88AED /* Assets.xcassets */; };
 		B20461C21E7FBD5500C88AED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B20461C01E7FBD5500C88AED /* LaunchScreen.storyboard */; };
 		B20461CB1E7FC26900C88AED /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20461CA1E7FC26900C88AED /* Utils.swift */; };
+		B20461CE1E7FCD9F00C88AED /* MMTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20461CD1E7FCD9F00C88AED /* MMTextField.swift */; };
+		B20461D01E7FD17800C88AED /* DateTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20461CF1E7FD17800C88AED /* DateTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		B20461C11E7FBD5500C88AED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B20461C31E7FBD5500C88AED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B20461CA1E7FC26900C88AED /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		B20461CD1E7FCD9F00C88AED /* MMTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMTextField.swift; sourceTree = "<group>"; };
+		B20461CF1E7FD17800C88AED /* DateTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTextField.swift; sourceTree = "<group>"; };
 		BAD7F31954FB005B16A18ED5 /* Pods-PhoneValidation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhoneValidation.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhoneValidation/Pods-PhoneValidation.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +84,7 @@
 		B20461B61E7FBD5500C88AED /* PhoneValidation */ = {
 			isa = PBXGroup;
 			children = (
+				B20461CC1E7FCD3C00C88AED /* View */,
 				B20461C91E7FC25D00C88AED /* Model */,
 				B20461B71E7FBD5500C88AED /* AppDelegate.swift */,
 				B20461B91E7FBD5500C88AED /* ViewController.swift */,
@@ -97,6 +102,15 @@
 				B20461CA1E7FC26900C88AED /* Utils.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		B20461CC1E7FCD3C00C88AED /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B20461CD1E7FCD9F00C88AED /* MMTextField.swift */,
+				B20461CF1E7FD17800C88AED /* DateTextField.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +239,8 @@
 				B20461BA1E7FBD5500C88AED /* ViewController.swift in Sources */,
 				B20461B81E7FBD5500C88AED /* AppDelegate.swift in Sources */,
 				B20461CB1E7FC26900C88AED /* Utils.swift in Sources */,
+				B20461D01E7FD17800C88AED /* DateTextField.swift in Sources */,
+				B20461CE1E7FCD9F00C88AED /* MMTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
