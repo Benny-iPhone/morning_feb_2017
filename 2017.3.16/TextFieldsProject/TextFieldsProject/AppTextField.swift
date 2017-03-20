@@ -22,7 +22,7 @@ class AppTextField: UITextField {
         setup()
     }
     
-    private func setup(){
+    fileprivate func setup(){
         backgroundColor = .white
         textColor = .black
         clearButtonMode = .whileEditing
@@ -48,7 +48,33 @@ class AppTextField: UITextField {
 
 }
 
-
+class ValidationTextField : AppTextField{
+    enum Validation{
+        case nothing, okay, wrong
+        
+        func image() -> UIImage?{
+            switch self {
+            case .nothing: return nil
+            case .okay: return #imageLiteral(resourceName: "checkmark")
+            case .wrong: return #imageLiteral(resourceName: "attention")
+            }
+        }
+    }
+    
+    var valid : Validation = .nothing{
+        didSet{
+            (leftView as? UIImageView)?.image = valid.image()
+        }
+    }
+    
+    override func setup() {
+        super.setup()
+        
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 25, height: 25))
+        self.leftView = imageView
+        self.leftViewMode = .always
+    }
+}
 
 
 

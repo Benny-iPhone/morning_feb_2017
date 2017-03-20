@@ -14,6 +14,7 @@
 		B204613A1E7AC0F100C88AED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B20461381E7AC0F100C88AED /* LaunchScreen.storyboard */; };
 		B20461431E7AC48100C88AED /* AppTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20461421E7AC48100C88AED /* AppTextField.swift */; };
 		B20461451E7AC6DF00C88AED /* IndieFlower.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B20461441E7AC6DF00C88AED /* IndieFlower.ttf */; };
+		B20461AA1E7FB7ED00C88AED /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20461A91E7FB7ED00C88AED /* EmailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		B204613B1E7AC0F100C88AED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B20461421E7AC48100C88AED /* AppTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTextField.swift; sourceTree = "<group>"; };
 		B20461441E7AC6DF00C88AED /* IndieFlower.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = IndieFlower.ttf; sourceTree = "<group>"; };
+		B20461A91E7FB7ED00C88AED /* EmailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				B20461411E7AC46E00C88AED /* View */,
 				B204612F1E7AC0F100C88AED /* AppDelegate.swift */,
 				B20461311E7AC0F100C88AED /* ViewController.swift */,
+				B20461A91E7FB7ED00C88AED /* EmailViewController.swift */,
 				B20461331E7AC0F100C88AED /* Main.storyboard */,
 				B20461361E7AC0F100C88AED /* Assets.xcassets */,
 				B20461381E7AC0F100C88AED /* LaunchScreen.storyboard */,
@@ -154,6 +157,7 @@
 				B20461321E7AC0F100C88AED /* ViewController.swift in Sources */,
 				B20461301E7AC0F100C88AED /* AppDelegate.swift in Sources */,
 				B20461431E7AC48100C88AED /* AppTextField.swift in Sources */,
+				B20461AA1E7FB7ED00C88AED /* EmailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +317,7 @@
 				B20461401E7AC0F100C88AED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

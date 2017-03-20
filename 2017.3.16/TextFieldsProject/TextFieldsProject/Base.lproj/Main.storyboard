@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Zcy-OU-ZOA">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -14,7 +14,7 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Item-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TextFieldsProject" customModuleProvider="target" sceneMemberID="viewController">
@@ -69,6 +69,7 @@
                             <outletCollection property="gestureRecognizers" destination="r3x-yZ-Ybn" appends="YES" id="NoU-ck-Gb3"/>
                         </connections>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="QE1-GP-gvt"/>
                     <connections>
                         <outlet property="firstnameTextField" destination="71S-UW-yof" id="TTP-ED-Bgi"/>
                         <outlet property="label" destination="c4H-0J-6e3" id="XvR-ke-zi2"/>
@@ -82,6 +83,69 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="996" y="-145"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="u1t-Yu-52L">
+            <objects>
+                <viewController id="Jkf-sf-PO4" customClass="EmailViewController" customModule="TextFieldsProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="afJ-6G-TXo"/>
+                        <viewControllerLayoutGuide type="bottom" id="sdb-sf-75c"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RJ7-e7-TDY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gRk-8c-lOA" customClass="ValidationTextField" customModule="TextFieldsProject" customModuleProvider="target">
+                                <rect key="frame" x="20" y="40" width="335" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                <connections>
+                                    <action selector="emailDidChange:" destination="Jkf-sf-PO4" eventType="editingChanged" id="yTL-SB-fFP"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="gRk-8c-lOA" firstAttribute="top" secondItem="afJ-6G-TXo" secondAttribute="bottom" constant="20" id="Yea-Ei-22t"/>
+                            <constraint firstAttribute="trailing" secondItem="gRk-8c-lOA" secondAttribute="trailing" constant="20" id="aHh-tG-NhK"/>
+                            <constraint firstItem="gRk-8c-lOA" firstAttribute="leading" secondItem="RJ7-e7-TDY" secondAttribute="leading" constant="20" id="bdG-kD-5qt"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="ZmC-lS-bIp" appends="YES" id="vor-MY-NaE"/>
+                        </connections>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="qW7-Nw-SBC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u2E-Al-0VP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="ZmC-lS-bIp">
+                    <connections>
+                        <action selector="tapAction:" destination="Jkf-sf-PO4" id="IaM-Ge-wYe"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="996" y="555"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ffZ-7Z-e3M">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Zcy-OU-ZOA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="uxd-Fy-2GY">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="tyv-Sg-hId"/>
+                        <segue destination="Jkf-sf-PO4" kind="relationship" relationship="viewControllers" id="bG6-DH-T1p"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6md-Ib-g7s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
 </document>
