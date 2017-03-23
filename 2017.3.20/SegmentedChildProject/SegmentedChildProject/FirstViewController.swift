@@ -10,23 +10,28 @@ import UIKit
 
 class FirstViewController: UIViewController {
 
-    var currentIndex = 0
+    var currentIndex = 0{
+        didSet{
+            segmentedControl.selectedSegmentIndex = currentIndex
+            pageControl.currentPage = currentIndex
+        }
+    }
+    @IBOutlet weak var pageControl : UIPageControl!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     //increment
     @IBAction func swipeLeftAction(_ sender: Any) {
-        var index = segmentedControl.selectedSegmentIndex
+        var index = currentIndex
         if index == segmentedControl.numberOfSegments - 1{
             index = 0
         } else {
             index += 1
         }
         
-        segmentedControl.selectedSegmentIndex = index
-        childSegmentAction(segmentedControl)
+        showPage(at: index, right: true)
     }
     //decrement
     @IBAction func swipeRightAction(_ sender: Any) {
-        var index = segmentedControl.selectedSegmentIndex
+        var index = currentIndex
         
         if index == 0{
             index = segmentedControl.numberOfSegments - 1
@@ -34,13 +39,24 @@ class FirstViewController: UIViewController {
             index -= 1
         }
         
-        segmentedControl.selectedSegmentIndex = index
-        childSegmentAction(segmentedControl)
+        showPage(at: index, right: false)
     }
     
     @IBAction func childSegmentAction(_ sender: UISegmentedControl) {
+        let index = sender.selectedSegmentIndex
+        let isToRight = index > currentIndex
+        showPage(at: index, right: isToRight)
+    }
+    
+    @IBAction func pageControlAction(_ sender : UIPageControl){
+        let index = sender.currentPage
+        let isToRight = index > currentIndex
+        showPage(at: index, right: isToRight)
+    }
+    
+    func showPage(at index : Int, right : Bool){
         var id = ""
-        switch sender.selectedSegmentIndex {
+        switch index {
         case 0:
             id = "Red"
         case 1:
@@ -55,17 +71,16 @@ class FirstViewController: UIViewController {
             return
         }
         
-        let isToRight = sender.selectedSegmentIndex > currentIndex
         
         //remove old
         if let oldVC = self.childViewControllers.first{
-            remove(vc: oldVC, right: isToRight)
+            remove(vc: oldVC, right: right)
         }
         
         //present new
-        display(vc: vc, right: isToRight)
+        display(vc: vc, right: right)
         
-        currentIndex = sender.selectedSegmentIndex
+        currentIndex = index
     }
     
     @IBOutlet weak var containerView: UIView!

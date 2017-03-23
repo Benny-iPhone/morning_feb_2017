@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -29,22 +29,44 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gWz-Ob-JP0">
-                                <rect key="frame" x="0.0" y="98" width="375" height="520"/>
+                                <rect key="frame" x="0.0" y="98" width="375" height="483"/>
                                 <connections>
                                     <segue destination="BCl-Zy-ooc" kind="embed" id="zj1-kE-rwo"/>
                                 </connections>
                             </containerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rb0-aZ-59D">
+                                <rect key="frame" x="0.0" y="581" width="375" height="37"/>
+                                <subviews>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="d1o-Xd-T5i">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="37"/>
+                                        <connections>
+                                            <action selector="pageControlAction:" destination="9pv-A4-QxB" eventType="valueChanged" id="X5i-th-bMx"/>
+                                        </connections>
+                                    </pageControl>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="d1o-Xd-T5i" firstAttribute="width" secondItem="rb0-aZ-59D" secondAttribute="width" id="0Eg-3Y-6eI"/>
+                                    <constraint firstItem="d1o-Xd-T5i" firstAttribute="height" secondItem="rb0-aZ-59D" secondAttribute="height" id="5Io-0K-8f7"/>
+                                    <constraint firstItem="d1o-Xd-T5i" firstAttribute="centerY" secondItem="rb0-aZ-59D" secondAttribute="centerY" id="JhG-K4-DVp"/>
+                                    <constraint firstAttribute="height" constant="37" id="OCk-YY-0fT"/>
+                                    <constraint firstItem="d1o-Xd-T5i" firstAttribute="centerX" secondItem="rb0-aZ-59D" secondAttribute="centerX" id="s7M-Op-Rdc"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="rb0-aZ-59D" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="BVB-sD-wP8"/>
                             <constraint firstItem="OK4-7S-QhD" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="Cb4-Mc-Tdq"/>
                             <constraint firstItem="OK4-7S-QhD" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" id="D1H-v2-P0B"/>
                             <constraint firstAttribute="trailing" secondItem="gWz-Ob-JP0" secondAttribute="trailing" id="Q8r-vl-WM5"/>
                             <constraint firstItem="gWz-Ob-JP0" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="dqd-zb-VJJ"/>
+                            <constraint firstAttribute="trailing" secondItem="rb0-aZ-59D" secondAttribute="trailing" id="i15-Qn-0OC"/>
+                            <constraint firstItem="rb0-aZ-59D" firstAttribute="top" secondItem="gWz-Ob-JP0" secondAttribute="bottom" id="liv-86-Jgd"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="rb0-aZ-59D" secondAttribute="bottom" id="nbL-hU-g1w"/>
                             <constraint firstItem="gWz-Ob-JP0" firstAttribute="top" secondItem="OK4-7S-QhD" secondAttribute="bottom" id="pHI-x7-ubD"/>
                             <constraint firstAttribute="trailing" secondItem="OK4-7S-QhD" secondAttribute="trailing" id="rsr-RU-EvW"/>
-                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="gWz-Ob-JP0" secondAttribute="bottom" id="y1X-XF-tbd"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="ugd-o6-nuD" appends="YES" id="VVY-Az-YvX"/>
@@ -68,6 +90,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="containerView" destination="gWz-Ob-JP0" id="f6X-gx-hzL"/>
+                        <outlet property="pageControl" destination="d1o-Xd-T5i" id="3aj-RV-Rcw"/>
                         <outlet property="segmentedControl" destination="XMK-XO-1uo" id="Fth-0R-eLp"/>
                     </connections>
                 </viewController>
@@ -167,12 +190,16 @@
         <scene sceneID="OrT-9y-0pJ">
             <objects>
                 <viewController storyboardIdentifier="Red" id="BCl-Zy-ooc" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fWa-4k-OdT"/>
+                        <viewControllerLayoutGuide type="bottom" id="qCt-Qf-EZr"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="uPw-vj-bKM">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="520"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="483"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="6LI-zT-nnk">
-                                <rect key="frame" x="169" y="241" width="37" height="37"/>
+                                <rect key="frame" x="169" y="223" width="37" height="37"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
