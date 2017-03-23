@@ -35,12 +35,21 @@
                                     <action selector="loginAlertAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hzM-nK-ABq"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKi-Pi-YkB">
+                                <rect key="frame" x="156.5" y="176" width="61" height="30"/>
+                                <state key="normal" title="Old Alert"/>
+                                <connections>
+                                    <action selector="oldAlertAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cBA-9A-G8S"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ygg-oY-inR" firstAttribute="centerX" secondItem="14b-gm-h2c" secondAttribute="centerX" id="8Gm-sG-9ZZ"/>
                             <constraint firstItem="14b-gm-h2c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="I3U-au-RaC"/>
                             <constraint firstItem="14b-gm-h2c" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="V0v-kx-XXe"/>
+                            <constraint firstItem="gKi-Pi-YkB" firstAttribute="top" secondItem="ygg-oY-inR" secondAttribute="bottom" constant="40" id="dYb-rY-mrH"/>
+                            <constraint firstItem="gKi-Pi-YkB" firstAttribute="centerX" secondItem="ygg-oY-inR" secondAttribute="centerX" id="lK0-QN-1R1"/>
                             <constraint firstItem="ygg-oY-inR" firstAttribute="top" secondItem="14b-gm-h2c" secondAttribute="bottom" constant="40" id="tfG-rP-Q7T"/>
                         </constraints>
                     </view>

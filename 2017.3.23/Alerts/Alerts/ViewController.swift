@@ -45,6 +45,7 @@ class ViewController: UIViewController {
         
         
         
+        
         present(controller, animated: true, completion: nil)
         /*
         var arr = [1,2,3,0]
@@ -143,7 +144,41 @@ class ViewController: UIViewController {
         }
     }
     
+    class Person : NSObject{
+        var name = ""
+    }
+    
+    @IBAction func oldAlertAction(_ sender: Any) {
+        
+        let p = Person()
+        p.name = "benny"
+        p.setValue("steve", forKey: "name")
+        
+        //UIAlertView(title: "error", message: "no internet connection", delegate: nil, cancelButtonTitle: "ok").show()
+        
+        let alert = UIAlertView(title: "yo!", message: "sup?", delegate: self, cancelButtonTitle: "ok", otherButtonTitles: "more")
+        
+        alert.alertViewStyle = .loginAndPasswordInput
+        alert.textField(at: 0)?.placeholder = "username"
+        
+        let imageView = UIImageView(image: #imageLiteral(resourceName: "steve"))
+        alert.setValue(imageView, forKey: "accessoryView")
+        
+        alert.show()
+        
+        
+        
+    }
+    
+    
 }
+
+extension ViewController : UIAlertViewDelegate{
+    func alertView(_ alertView: UIAlertView, clickedButtonAt buttonIndex: Int) {
+        
+    }
+}
+
 
 
 
