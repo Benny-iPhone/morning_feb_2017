@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SlotMachine" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oe9-pw-PEj">
+                                <rect key="frame" x="0.0" y="20" width="375" height="216"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sRA-bj-aA7">
+                                <rect key="frame" x="166" y="268" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K36-vw-Vtn">
+                                <rect key="frame" x="140" y="321" width="94" height="70"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <state key="normal" title="Spin"/>
+                                <connections>
+                                    <action selector="spinAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dGj-dI-QhM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sRA-bj-aA7" firstAttribute="top" secondItem="oe9-pw-PEj" secondAttribute="bottom" constant="32" id="Cjy-bE-5ZA"/>
+                            <constraint firstAttribute="trailing" secondItem="oe9-pw-PEj" secondAttribute="trailing" id="QXX-Lg-gDr"/>
+                            <constraint firstItem="sRA-bj-aA7" firstAttribute="centerX" secondItem="oe9-pw-PEj" secondAttribute="centerX" id="TAE-sT-aGc"/>
+                            <constraint firstItem="K36-vw-Vtn" firstAttribute="top" secondItem="sRA-bj-aA7" secondAttribute="bottom" constant="32" id="Yhx-qH-mkC"/>
+                            <constraint firstItem="oe9-pw-PEj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gPS-LE-jSl"/>
+                            <constraint firstItem="oe9-pw-PEj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="wP8-5V-Xoj"/>
+                            <constraint firstItem="K36-vw-Vtn" firstAttribute="centerX" secondItem="sRA-bj-aA7" secondAttribute="centerX" id="yZK-zM-lKI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="sRA-bj-aA7" id="zBY-mN-RA0"/>
+                        <outlet property="pickerView" destination="oe9-pw-PEj" id="Jh3-yP-sKI"/>
+                        <outlet property="spinButton" destination="K36-vw-Vtn" id="7om-YA-8XT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

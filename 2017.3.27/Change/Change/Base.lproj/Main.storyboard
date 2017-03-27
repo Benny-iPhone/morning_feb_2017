@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Change" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Source Currency Code" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fyb-O3-Uii" customClass="CurrencyTextField" customModule="Change" customModuleProvider="target">
+                                <rect key="frame" x="16" y="28" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="didEndOnExitAction:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="4hR-wZ-9es"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aTs-VI-lCJ" customClass="DateTextField" customModule="Change" customModuleProvider="target">
+                                <rect key="frame" x="16" y="74" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="didEndOnExitAction:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="o1n-9j-uVW"/>
+                                </connections>
+                            </textField>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zRx-QJ-TfW">
+                                <rect key="frame" x="16" y="128" width="343" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="SWe-Om-7iR"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="8ls-Ww-ffl"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="fyb-O3-Uii" secondAttribute="trailing" constant="16" id="2IY-lG-53P"/>
+                            <constraint firstItem="zRx-QJ-TfW" firstAttribute="top" secondItem="aTs-VI-lCJ" secondAttribute="bottom" constant="24" id="31a-6n-JB3"/>
+                            <constraint firstItem="fyb-O3-Uii" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="Doz-Gp-Kik"/>
+                            <constraint firstItem="fyb-O3-Uii" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="F9J-sy-Hlx"/>
+                            <constraint firstItem="aTs-VI-lCJ" firstAttribute="leading" secondItem="fyb-O3-Uii" secondAttribute="leading" id="TNp-Up-PGu"/>
+                            <constraint firstItem="aTs-VI-lCJ" firstAttribute="trailing" secondItem="fyb-O3-Uii" secondAttribute="trailing" id="aa7-2b-fsO"/>
+                            <constraint firstItem="zRx-QJ-TfW" firstAttribute="leading" secondItem="aTs-VI-lCJ" secondAttribute="leading" id="p2f-ha-PU4"/>
+                            <constraint firstItem="zRx-QJ-TfW" firstAttribute="trailing" secondItem="aTs-VI-lCJ" secondAttribute="trailing" id="t9S-Xs-PES"/>
+                            <constraint firstItem="aTs-VI-lCJ" firstAttribute="top" secondItem="fyb-O3-Uii" secondAttribute="bottom" constant="16" id="wN7-0L-MfT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="currencyTextField" destination="fyb-O3-Uii" id="g8f-ew-S27"/>
+                        <outlet property="dateTextField" destination="aTs-VI-lCJ" id="jn4-re-PJn"/>
+                        <outlet property="pickerView" destination="zRx-QJ-TfW" id="MN9-xU-Ldl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+</document>
