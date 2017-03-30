@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Ribs</string>
+		<key>calories</key>
+		<integer>400</integer>
+		<key>price</key>
+		<integer>90</integer>
+		<key>image</key>
+		<string>http://mixtemagazine.ca/wp-content/uploads/2013/06/recette-short-rib-de-boeuf-braise-style-bbq-lf.jpg</string>
+		<key>desc</key>
+		<string>very very recommended, offered by Aviv</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Chicken Wings</string>
+		<key>calories</key>
+		<integer>800</integer>
+		<key>price</key>
+		<integer>30</integer>
+		<key>image</key>
+		<string>http://assets.epicurious.com/photos/5761c748ff66dde1456dfec0/2:1/w_1260%2Ch_630/crispy-baked-chicken-wings.jpg</string>
+		<key>desc</key>
+		<string>Better with Tariaqi suice</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Burger</string>
+		<key>calories</key>
+		<integer>500</integer>
+		<key>price</key>
+		<integer>45</integer>
+		<key>image</key>
+		<string>http://nydiningguide.com/wp-content/uploads/2015/02/Boeuf_and_Bun.jpg</string>
+		<key>desc</key>
+		<string>Sale! with beer</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Pasta Bolonez</string>
+		<key>calories</key>
+		<integer>600</integer>
+		<key>price</key>
+		<integer>48</integer>
+		<key>image</key>
+		<string>https://static-communitytable.parade.com/wp-content/uploads/2012/02/dan-marino-pasta-bolognese_getty-images.jpg</string>
+		<key>desc</key>
+		<string>no cheese</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Kabab</string>
+		<key>calories</key>
+		<integer>250</integer>
+		<key>price</key>
+		<integer>12</integer>
+		<key>image</key>
+		<string>http://www.patnakababhouse.com/wp-content/uploads/2013/04/154602080-10pc.jpg</string>
+		<key>desc</key>
+		<string>leftover from yesterday</string>
+	</dict>
+</array>
+</plist>
