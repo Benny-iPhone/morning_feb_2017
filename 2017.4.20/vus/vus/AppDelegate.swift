@@ -19,6 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FIRApp.configure()
         
+        FlowController.shared.window = window
+        FlowController.shared.determineRoot()
+        
         return true
     }
 
