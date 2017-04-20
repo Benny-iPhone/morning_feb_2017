@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="vus" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PHh-pr-6Dc">
+                                <rect key="frame" x="20" y="40" width="335" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XwM-kT-4rc">
+                                <rect key="frame" x="20" y="90" width="335" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fF1-bG-7we">
+                                <rect key="frame" x="172.5" y="140" width="30" height="30"/>
+                                <state key="normal" title="add"/>
+                                <connections>
+                                    <action selector="addAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UE8-zE-kiX"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DVC-PM-3fm">
+                                <rect key="frame" x="0.0" y="186" width="375" height="481"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="RXf-gs-iIS">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RXf-gs-iIS" id="uhT-QP-G43">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="RDn-VI-Pzr"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="EN1-Rh-ExQ"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DVC-PM-3fm" firstAttribute="top" secondItem="fF1-bG-7we" secondAttribute="bottom" constant="16" id="1ze-6m-TaO"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DVC-PM-3fm" secondAttribute="bottom" id="FTD-hv-NHR"/>
+                            <constraint firstItem="PHh-pr-6Dc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="LSn-Ea-svz"/>
+                            <constraint firstAttribute="trailing" secondItem="XwM-kT-4rc" secondAttribute="trailing" constant="20" id="NxQ-5u-cXg"/>
+                            <constraint firstItem="XwM-kT-4rc" firstAttribute="top" secondItem="PHh-pr-6Dc" secondAttribute="bottom" constant="20" id="Uno-RS-umw"/>
+                            <constraint firstAttribute="trailing" secondItem="DVC-PM-3fm" secondAttribute="trailing" id="aht-rW-BsS"/>
+                            <constraint firstItem="PHh-pr-6Dc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="e79-5D-8Th"/>
+                            <constraint firstItem="fF1-bG-7we" firstAttribute="centerX" secondItem="XwM-kT-4rc" secondAttribute="centerX" id="hQd-mc-wsq"/>
+                            <constraint firstAttribute="trailing" secondItem="PHh-pr-6Dc" secondAttribute="trailing" constant="20" id="n3o-ij-mUJ"/>
+                            <constraint firstItem="fF1-bG-7we" firstAttribute="top" secondItem="XwM-kT-4rc" secondAttribute="bottom" constant="20" id="v3s-65-omN"/>
+                            <constraint firstItem="XwM-kT-4rc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="vle-X1-T2B"/>
+                            <constraint firstItem="DVC-PM-3fm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="y9B-8j-mM9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nameTextField" destination="PHh-pr-6Dc" id="PVd-wU-Dbe"/>
+                        <outlet property="phoneTextField" destination="XwM-kT-4rc" id="xQ5-ls-Ofm"/>
+                        <outlet property="tableView" destination="DVC-PM-3fm" id="qKG-Zn-VWC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
