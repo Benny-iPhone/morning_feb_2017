@@ -48,6 +48,7 @@
 		B29F55DD1EA8BDB500B46389 /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 		B29F55DF1EA8CA5D00B46389 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		B29F55E11EA8D62A00B46389 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		B2F112481EB2173700E8650F /* vus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = vus.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +101,7 @@
 		B29F55B81EA888EE00B46389 /* vus */ = {
 			isa = PBXGroup;
 			children = (
+				B2F112481EB2173700E8650F /* vus.entitlements */,
 				B29F55D61EA8A47000B46389 /* Controller */,
 				B29F55CD1EA8901F00B46389 /* Model */,
 				B29F55B91EA888EE00B46389 /* AppDelegate.swift */,
@@ -172,7 +174,13 @@
 				TargetAttributes = {
 					B29F55B51EA888EE00B46389 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = J7YZTH9Z4F;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -394,7 +402,10 @@
 			baseConfigurationReference = AB122F98E4FCE4B1C73664D6 /* Pods-vus.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = vus/vus.entitlements;
+				DEVELOPMENT_TEAM = J7YZTH9Z4F;
 				INFOPLIST_FILE = vus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xcoder.solutions.vus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -407,7 +418,10 @@
 			baseConfigurationReference = 89E83F6854CBE7808C599CC4 /* Pods-vus.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = vus/vus.entitlements;
+				DEVELOPMENT_TEAM = J7YZTH9Z4F;
 				INFOPLIST_FILE = vus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xcoder.solutions.vus;
 				PRODUCT_NAME = "$(TARGET_NAME)";

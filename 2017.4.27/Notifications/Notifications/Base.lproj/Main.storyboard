@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Notifications" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="type alert body" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Peq-Pe-Nui">
+                                <rect key="frame" x="20" y="40" width="335" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="closeKeyboard:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="EkL-av-22j"/>
+                                </connections>
+                            </textField>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="mXx-LZ-cCJ">
+                                <rect key="frame" x="20" y="86" width="335" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="514966803.90818799">
+                                    <!--2017-04-27 06:20:03 +0000-->
+                                </date>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f68-iz-Nz1">
+                                <rect key="frame" x="128.5" y="326" width="118" height="30"/>
+                                <state key="normal" title="make notification"/>
+                                <connections>
+                                    <action selector="makeNotificationAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p5L-2Q-Adr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="mXx-LZ-cCJ" firstAttribute="top" secondItem="Peq-Pe-Nui" secondAttribute="bottom" constant="16" id="30R-tg-Fda"/>
+                            <constraint firstItem="f68-iz-Nz1" firstAttribute="top" secondItem="mXx-LZ-cCJ" secondAttribute="bottom" constant="24" id="32q-3P-aRY"/>
+                            <constraint firstItem="f68-iz-Nz1" firstAttribute="centerX" secondItem="mXx-LZ-cCJ" secondAttribute="centerX" id="ClN-KM-rmS"/>
+                            <constraint firstItem="mXx-LZ-cCJ" firstAttribute="leading" secondItem="Peq-Pe-Nui" secondAttribute="leading" id="Eud-b0-Fvg"/>
+                            <constraint firstItem="Peq-Pe-Nui" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="Smw-8K-i1s"/>
+                            <constraint firstItem="Peq-Pe-Nui" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="Urd-OM-gfK"/>
+                            <constraint firstItem="mXx-LZ-cCJ" firstAttribute="trailing" secondItem="Peq-Pe-Nui" secondAttribute="trailing" id="anE-UB-ATO"/>
+                            <constraint firstAttribute="trailing" secondItem="Peq-Pe-Nui" secondAttribute="trailing" constant="20" id="cCG-g9-7EG"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="TbC-x7-A6u" appends="YES" id="XYj-x5-upY"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="datePicker" destination="mXx-LZ-cCJ" id="5t4-k8-fx9"/>
+                        <outlet property="textField" destination="Peq-Pe-Nui" id="TX2-Gs-ANW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="TbC-x7-A6u">
+                    <connections>
+                        <action selector="closeKeyboard:" destination="BYZ-38-t0r" id="qKD-fK-7vR"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+        </scene>
+    </scenes>
+</document>
