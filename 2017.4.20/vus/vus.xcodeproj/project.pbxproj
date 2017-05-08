@@ -13,7 +13,6 @@
 		B29F55BF1EA888EE00B46389 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B29F55BD1EA888EE00B46389 /* Main.storyboard */; };
 		B29F55C11EA888EE00B46389 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B29F55C01EA888EE00B46389 /* Assets.xcassets */; };
 		B29F55C41EA888EE00B46389 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B29F55C21EA888EE00B46389 /* LaunchScreen.storyboard */; };
-		B29F55CC1EA88A7D00B46389 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B29F55CB1EA88A7D00B46389 /* GoogleService-Info.plist */; };
 		B29F55CF1EA8904900B46389 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29F55CE1EA8904900B46389 /* DBManager.swift */; };
 		B29F55D11EA8A21000B46389 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B29F55D01EA8A21000B46389 /* Login.storyboard */; };
 		B29F55D31EA8A22200B46389 /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B29F55D21EA8A22200B46389 /* Chat.storyboard */; };
@@ -24,6 +23,7 @@
 		B29F55DE1EA8BDB500B46389 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29F55DD1EA8BDB500B46389 /* Room.swift */; };
 		B29F55E01EA8CA5D00B46389 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29F55DF1EA8CA5D00B46389 /* ChatViewController.swift */; };
 		B29F55E21EA8D62A00B46389 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29F55E11EA8D62A00B46389 /* Message.swift */; };
+		B2F1124A1EB21D9500E8650F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2F112491EB21D9500E8650F /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +37,6 @@
 		B29F55C01EA888EE00B46389 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B29F55C31EA888EE00B46389 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B29F55C51EA888EE00B46389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B29F55CB1EA88A7D00B46389 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B29F55CE1EA8904900B46389 /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 		B29F55D01EA8A21000B46389 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		B29F55D21EA8A22200B46389 /* Chat.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		B29F55DF1EA8CA5D00B46389 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		B29F55E11EA8D62A00B46389 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		B2F112481EB2173700E8650F /* vus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = vus.entitlements; sourceTree = "<group>"; };
+		B2F112491EB21D9500E8650F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +113,7 @@
 				B29F55C01EA888EE00B46389 /* Assets.xcassets */,
 				B29F55C21EA888EE00B46389 /* LaunchScreen.storyboard */,
 				B29F55C51EA888EE00B46389 /* Info.plist */,
-				B29F55CB1EA88A7D00B46389 /* GoogleService-Info.plist */,
+				B2F112491EB21D9500E8650F /* GoogleService-Info.plist */,
 			);
 			path = vus;
 			sourceTree = "<group>";
@@ -210,10 +210,10 @@
 				B29F55D31EA8A22200B46389 /* Chat.storyboard in Resources */,
 				B29F55D51EA8A22900B46389 /* Empty.storyboard in Resources */,
 				B29F55C41EA888EE00B46389 /* LaunchScreen.storyboard in Resources */,
-				B29F55CC1EA88A7D00B46389 /* GoogleService-Info.plist in Resources */,
 				B29F55C11EA888EE00B46389 /* Assets.xcassets in Resources */,
 				B29F55D11EA8A21000B46389 /* Login.storyboard in Resources */,
 				B29F55BF1EA888EE00B46389 /* Main.storyboard in Resources */,
+				B2F1124A1EB21D9500E8650F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,7 +405,7 @@
 				CODE_SIGN_ENTITLEMENTS = vus/vus.entitlements;
 				DEVELOPMENT_TEAM = J7YZTH9Z4F;
 				INFOPLIST_FILE = vus/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xcoder.solutions.vus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -421,7 +421,7 @@
 				CODE_SIGN_ENTITLEMENTS = vus/vus.entitlements;
 				DEVELOPMENT_TEAM = J7YZTH9Z4F;
 				INFOPLIST_FILE = vus/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xcoder.solutions.vus;
 				PRODUCT_NAME = "$(TARGET_NAME)";

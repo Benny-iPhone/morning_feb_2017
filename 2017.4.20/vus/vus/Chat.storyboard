@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="V4I-JO-LAO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="V4I-JO-LAO">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -31,6 +31,26 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WsQ-AV-C51" id="rc1-PB-MhJ">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAg-FS-Ofp">
+                                                    <rect key="frame" x="323" y="10" width="22" height="22"/>
+                                                    <connections>
+                                                        <action selector="addTopicAction:" destination="oVR-nn-4bB" eventType="touchUpInside" id="ZYN-D2-gy6"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rv4-uh-i8W">
+                                                    <rect key="frame" x="8" y="11.5" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="bAg-FS-Ofp" secondAttribute="trailing" constant="30" id="gLh-RA-cBs"/>
+                                                <constraint firstItem="Rv4-uh-i8W" firstAttribute="centerY" secondItem="rc1-PB-MhJ" secondAttribute="centerY" id="oT3-1t-Y5R"/>
+                                                <constraint firstItem="Rv4-uh-i8W" firstAttribute="leading" secondItem="rc1-PB-MhJ" secondAttribute="leading" constant="8" id="vY7-vd-aU8"/>
+                                                <constraint firstItem="bAg-FS-Ofp" firstAttribute="centerY" secondItem="rc1-PB-MhJ" secondAttribute="centerY" id="yAw-3J-wyl"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="gbW-Wu-lRD" kind="show" id="gKD-nt-fU5"/>

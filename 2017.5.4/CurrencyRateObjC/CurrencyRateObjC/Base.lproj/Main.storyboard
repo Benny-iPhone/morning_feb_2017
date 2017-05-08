@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="GSf-MW-krS">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Ik5-nZ-6k0">
+                                    <size key="itemSize" width="375" height="647"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="Wq6-NF-ywg" customClass="CurrencyCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1dj-13-bpM">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="194"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3.4167" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8y0-Jo-do8">
+                                                    <rect key="frame" x="16" y="210" width="343" height="38.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currency Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X94-I2-ZpY">
+                                                    <rect key="frame" x="127.5" y="264.5" width="120" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WF5-m4-dKm">
+                                                    <rect key="frame" x="131.5" y="317.5" width="111" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="WF5-m4-dKm" firstAttribute="top" secondItem="X94-I2-ZpY" secondAttribute="bottom" constant="32" id="6xr-pW-7hq"/>
+                                            <constraint firstItem="X94-I2-ZpY" firstAttribute="centerX" secondItem="8y0-Jo-do8" secondAttribute="centerX" id="HCM-N8-DDK"/>
+                                            <constraint firstItem="WF5-m4-dKm" firstAttribute="centerX" secondItem="X94-I2-ZpY" secondAttribute="centerX" id="J6A-Zh-9Gy"/>
+                                            <constraint firstItem="1dj-13-bpM" firstAttribute="leading" secondItem="Wq6-NF-ywg" secondAttribute="leading" id="Tir-kX-4Yh"/>
+                                            <constraint firstAttribute="trailing" secondItem="8y0-Jo-do8" secondAttribute="trailing" constant="16" id="Tsm-M4-8Sf"/>
+                                            <constraint firstAttribute="trailing" secondItem="1dj-13-bpM" secondAttribute="trailing" id="YVZ-q3-AgV"/>
+                                            <constraint firstItem="8y0-Jo-do8" firstAttribute="top" secondItem="1dj-13-bpM" secondAttribute="bottom" constant="16" id="eCQ-fc-hTy"/>
+                                            <constraint firstItem="1dj-13-bpM" firstAttribute="top" secondItem="Wq6-NF-ywg" secondAttribute="top" id="ohg-0A-Y5J"/>
+                                            <constraint firstItem="X94-I2-ZpY" firstAttribute="top" secondItem="8y0-Jo-do8" secondAttribute="bottom" constant="16" id="q6s-bx-3mc"/>
+                                            <constraint firstItem="1dj-13-bpM" firstAttribute="height" secondItem="Wq6-NF-ywg" secondAttribute="height" multiplier="0.3" id="wjl-HJ-rux"/>
+                                            <constraint firstItem="8y0-Jo-do8" firstAttribute="leading" secondItem="Wq6-NF-ywg" secondAttribute="leading" constant="16" id="yau-0K-buF"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="countryNameLabel" destination="WF5-m4-dKm" id="eWn-zC-q8V"/>
+                                            <outlet property="currencyNameLabel" destination="X94-I2-ZpY" id="Lpp-0M-nuI"/>
+                                            <outlet property="imageView" destination="1dj-13-bpM" id="XZX-i3-POW"/>
+                                            <outlet property="rateLabel" destination="8y0-Jo-do8" id="4mC-Fe-Wky"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="8hO-ve-1mL"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Dvn-Cf-xT8"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GSf-MW-krS" secondAttribute="bottom" id="aIb-P6-Thi"/>
+                            <constraint firstAttribute="trailing" secondItem="GSf-MW-krS" secondAttribute="trailing" id="eCv-QJ-ha8"/>
+                            <constraint firstItem="GSf-MW-krS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="g4R-nX-8fi"/>
+                            <constraint firstItem="GSf-MW-krS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hNO-sP-Zsw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="GSf-MW-krS" id="ggt-Or-L9o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>

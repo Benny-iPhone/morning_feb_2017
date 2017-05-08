@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseMessaging
 
 class MainViewController: UIViewController, UITableViewDataSource {
 
@@ -46,6 +47,22 @@ class MainViewController: UIViewController, UITableViewDataSource {
         present(alert, animated: true, completion: nil)
     }
 
+    @IBAction func addTopicAction(_ sender: UIButton) {
+        
+        guard let cell = sender.superview?.superview as? UITableViewCell,
+            let indexPath = self.tableView.indexPath(for: cell) else{
+            return
+        }
+        
+        let room = tableArray[indexPath.row]
+        
+        FIRMessaging.messaging().subscribe(toTopic: "/topics/news")
+        FIRMessaging.messaging().subscribe(toTopic: "/topics/" + room.key)
+        
+        
+        
+    }
+    
     //MARK: - UITableView
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -55,7 +72,8 @@ class MainViewController: UIViewController, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
-        cell.textLabel?.text = tableArray[indexPath.row].name
+        let label = cell.viewWithTag(1) as? UILabel
+        label?.text = tableArray[indexPath.row].name
         
         return cell
     }

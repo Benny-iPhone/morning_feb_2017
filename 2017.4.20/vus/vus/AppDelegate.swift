@@ -11,7 +11,7 @@ import Firebase
 import UserNotifications
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, FIRMessagingDelegate {
 
     var window: UIWindow?
 
@@ -25,15 +25,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //UNUserNotificationCenter.current().delegate = self
         
-        let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
-        UNUserNotificationCenter.current().requestAuthorization(
-            options: authOptions,
-            completionHandler: {_, _ in
+        let settings: UIUserNotificationSettings =
+            UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
+        application.registerUserNotificationSettings(settings)
         
-        
-                application.registerForRemoteNotifications()
-                
-        })
+        FIRMessaging.messaging().remoteMessageDelegate = self
         
         // For iOS 10 data message (sent via FCM)
         //FIRMessaging.messaging().remoteMessageDelegate = self
@@ -41,12 +37,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
+    func application(_ application: UIApplication, didRegister notificationSettings: UIUserNotificationSettings) {
+        application.registerForRemoteNotifications()
+    }
     
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         FIRInstanceID.instanceID().setAPNSToken(deviceToken, type: .sandbox)
     }
 
-
+    func applicationReceivedRemoteMessage(_ remoteMessage: FIRMessagingRemoteMessage){
+        
+    }
 }
 
 

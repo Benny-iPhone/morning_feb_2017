@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="SRE-mk-Ym9">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="7f0-La-XF6">
+            <objects>
+                <viewController id="SRE-mk-Ym9" customClass="LoginViewController" customModule="FacebookIntergration" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fd2-RB-pRJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="aTi-pf-NJ9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QmN-U1-3Nl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zcV-gp-jhq">
+                                <rect key="frame" x="20" y="40" width="335" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A3S-rC-M5D">
+                                <rect key="frame" x="20" y="90" width="335" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2pY-YH-x4d">
+                                <rect key="frame" x="20" y="140" width="335" height="30"/>
+                                <state key="normal" title="Login"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5k1-vX-IG8">
+                                <rect key="frame" x="179.5" y="190" width="16" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cND-U2-0Xn">
+                                <rect key="frame" x="203.5" y="200" width="151.5" height="1"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="DdA-St-9a3"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qUG-Kj-9K1">
+                                <rect key="frame" x="20" y="200" width="155.5" height="1"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="4Wq-dp-T5u"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="syU-5a-Nae">
+                                <rect key="frame" x="20" y="231" width="335" height="39"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="Login with Facebook">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginWithFacebookAction:" destination="SRE-mk-Ym9" eventType="touchUpInside" id="wd3-Sv-VHO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zcV-gp-jhq" firstAttribute="top" secondItem="Fd2-RB-pRJ" secondAttribute="bottom" constant="20" id="9gx-YJ-YeR"/>
+                            <constraint firstItem="cND-U2-0Xn" firstAttribute="trailing" secondItem="A3S-rC-M5D" secondAttribute="trailing" id="Ce9-XM-NMs"/>
+                            <constraint firstAttribute="trailing" secondItem="zcV-gp-jhq" secondAttribute="trailing" constant="20" id="PXg-l4-D0i"/>
+                            <constraint firstItem="A3S-rC-M5D" firstAttribute="leading" secondItem="QmN-U1-3Nl" secondAttribute="leading" constant="20" id="QYv-Mr-wAQ"/>
+                            <constraint firstItem="2pY-YH-x4d" firstAttribute="top" secondItem="A3S-rC-M5D" secondAttribute="bottom" constant="20" id="UHi-oX-AaN"/>
+                            <constraint firstItem="qUG-Kj-9K1" firstAttribute="centerY" secondItem="5k1-vX-IG8" secondAttribute="centerY" id="UWg-C8-9dJ"/>
+                            <constraint firstItem="qUG-Kj-9K1" firstAttribute="leading" secondItem="A3S-rC-M5D" secondAttribute="leading" id="Z3E-Vb-yjs"/>
+                            <constraint firstItem="2pY-YH-x4d" firstAttribute="leading" secondItem="QmN-U1-3Nl" secondAttribute="leading" constant="20" id="Z51-lK-C2d"/>
+                            <constraint firstItem="cND-U2-0Xn" firstAttribute="centerY" secondItem="5k1-vX-IG8" secondAttribute="centerY" id="eoq-b5-Wz1"/>
+                            <constraint firstItem="cND-U2-0Xn" firstAttribute="leading" secondItem="5k1-vX-IG8" secondAttribute="trailing" constant="8" id="eyZ-al-DdS"/>
+                            <constraint firstItem="5k1-vX-IG8" firstAttribute="top" secondItem="2pY-YH-x4d" secondAttribute="bottom" constant="20" id="gKW-UY-Zs9"/>
+                            <constraint firstItem="5k1-vX-IG8" firstAttribute="leading" secondItem="qUG-Kj-9K1" secondAttribute="trailing" constant="4" id="hmt-Vg-qaH"/>
+                            <constraint firstItem="syU-5a-Nae" firstAttribute="leading" secondItem="QmN-U1-3Nl" secondAttribute="leading" constant="20" id="iCK-A3-d9N"/>
+                            <constraint firstAttribute="trailing" secondItem="A3S-rC-M5D" secondAttribute="trailing" constant="20" id="pq8-5c-Q3W"/>
+                            <constraint firstItem="zcV-gp-jhq" firstAttribute="leading" secondItem="QmN-U1-3Nl" secondAttribute="leading" constant="20" id="sqF-Ps-wBm"/>
+                            <constraint firstAttribute="trailing" secondItem="2pY-YH-x4d" secondAttribute="trailing" constant="20" id="vTf-sj-2E7"/>
+                            <constraint firstItem="syU-5a-Nae" firstAttribute="top" secondItem="5k1-vX-IG8" secondAttribute="bottom" constant="20" id="w1d-be-mcA"/>
+                            <constraint firstItem="5k1-vX-IG8" firstAttribute="centerX" secondItem="2pY-YH-x4d" secondAttribute="centerX" id="z8G-Ng-RcH"/>
+                            <constraint firstAttribute="trailing" secondItem="syU-5a-Nae" secondAttribute="trailing" constant="20" id="zGP-oK-cMA"/>
+                            <constraint firstItem="A3S-rC-M5D" firstAttribute="top" secondItem="zcV-gp-jhq" secondAttribute="bottom" constant="20" id="zbj-Yu-nwC"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g0t-jA-i7b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-20" y="188.45577211394306"/>
+        </scene>
+    </scenes>
+</document>
