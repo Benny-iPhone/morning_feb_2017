@@ -49,7 +49,7 @@ class FacebookManager: NSObject {
         
         var request = GraphRequest(graphPath: "/me/taggable_friends")
         request.parameters = [
-            "fields":"id,name",
+            "fields":"id,name,birthday",
             "limit":10
             //"after":"your_retrived_after_key"
         ]
@@ -61,6 +61,32 @@ class FacebookManager: NSObject {
                 debugPrint(error)
             case .success(response: let response):
                 debugPrint(response)
+                
+                let firstId = (response.dictionaryValue!["data"] as! [[String:Any]]).first!["id"] as! String
+                self.requestBirthdayFor(userid: firstId)
+                
+                
+            }
+        }
+        
+        connection.start()
+    }
+    
+    func requestBirthdayFor(userid : String){
+        let connection = GraphRequestConnection()
+        
+        var request = GraphRequest(graphPath: "/\(userid)/")
+        request.parameters = ["fields":"id,name,birthday"]
+        
+        connection.add(request) { (_, result) in
+            switch result{
+            case .failed(let error):
+                debugPrint(error)
+            case .success(response: let response):
+                debugPrint(response)
+                
+                
+                
             }
         }
         

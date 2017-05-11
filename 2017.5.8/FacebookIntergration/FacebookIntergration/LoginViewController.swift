@@ -16,7 +16,7 @@ class LoginViewController: UIViewController {
     @IBAction func loginWithFacebookAction(_ sender: UIButton) {
         let manager = LoginManager()
         
-        manager.logIn([.publicProfile, .email, .userFriends], viewController: self) { (result : LoginResult) in
+        manager.logIn([.publicProfile, .email, .userFriends, .custom("friends_birthday")], viewController: self) { (result : LoginResult) in
 
             switch result{
             case .cancelled:

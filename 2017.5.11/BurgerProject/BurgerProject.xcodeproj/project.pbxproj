@@ -1,0 +1,396 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B2DFBC2D1EC44133002C7084 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DFBC2C1EC44133002C7084 /* AppDelegate.swift */; };
+		B2DFBC2F1EC44133002C7084 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DFBC2E1EC44133002C7084 /* ViewController.swift */; };
+		B2DFBC321EC44133002C7084 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2DFBC301EC44133002C7084 /* Main.storyboard */; };
+		B2DFBC341EC44133002C7084 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2DFBC331EC44133002C7084 /* Assets.xcassets */; };
+		B2DFBC371EC44133002C7084 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2DFBC351EC44133002C7084 /* LaunchScreen.storyboard */; };
+		B2DFBC3F1EC442AF002C7084 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DFBC3E1EC442AF002C7084 /* MainNavigationController.swift */; };
+		B2DFBC411EC44855002C7084 /* SideMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DFBC401EC44855002C7084 /* SideMenuTableViewController.swift */; };
+		B2DFBC431EC44A14002C7084 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DFBC421EC44A14002C7084 /* Utils.swift */; };
+		B6CF14ED81308C971B82521E /* Pods_BurgerProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0686CDE9CADCC77FFCEF814 /* Pods_BurgerProject.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B2DFBC291EC44133002C7084 /* BurgerProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BurgerProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2DFBC2C1EC44133002C7084 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B2DFBC2E1EC44133002C7084 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B2DFBC311EC44133002C7084 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B2DFBC331EC44133002C7084 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B2DFBC361EC44133002C7084 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B2DFBC381EC44133002C7084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2DFBC3E1EC442AF002C7084 /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		B2DFBC401EC44855002C7084 /* SideMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewController.swift; sourceTree = "<group>"; };
+		B2DFBC421EC44A14002C7084 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		B8B740157B796261623B2123 /* Pods-BurgerProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BurgerProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BurgerProject/Pods-BurgerProject.debug.xcconfig"; sourceTree = "<group>"; };
+		E91579EFCD30F0CA1DCA7C49 /* Pods-BurgerProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BurgerProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-BurgerProject/Pods-BurgerProject.release.xcconfig"; sourceTree = "<group>"; };
+		F0686CDE9CADCC77FFCEF814 /* Pods_BurgerProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BurgerProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B2DFBC261EC44133002C7084 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6CF14ED81308C971B82521E /* Pods_BurgerProject.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02C8E949D999C52AB0A60E22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0686CDE9CADCC77FFCEF814 /* Pods_BurgerProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1F72B8447267E3128B16F45B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B8B740157B796261623B2123 /* Pods-BurgerProject.debug.xcconfig */,
+				E91579EFCD30F0CA1DCA7C49 /* Pods-BurgerProject.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B2DFBC201EC44133002C7084 = {
+			isa = PBXGroup;
+			children = (
+				B2DFBC2B1EC44133002C7084 /* BurgerProject */,
+				B2DFBC2A1EC44133002C7084 /* Products */,
+				1F72B8447267E3128B16F45B /* Pods */,
+				02C8E949D999C52AB0A60E22 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B2DFBC2A1EC44133002C7084 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B2DFBC291EC44133002C7084 /* BurgerProject.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B2DFBC2B1EC44133002C7084 /* BurgerProject */ = {
+			isa = PBXGroup;
+			children = (
+				B2DFBC2C1EC44133002C7084 /* AppDelegate.swift */,
+				B2DFBC421EC44A14002C7084 /* Utils.swift */,
+				B2DFBC3E1EC442AF002C7084 /* MainNavigationController.swift */,
+				B2DFBC401EC44855002C7084 /* SideMenuTableViewController.swift */,
+				B2DFBC2E1EC44133002C7084 /* ViewController.swift */,
+				B2DFBC301EC44133002C7084 /* Main.storyboard */,
+				B2DFBC331EC44133002C7084 /* Assets.xcassets */,
+				B2DFBC351EC44133002C7084 /* LaunchScreen.storyboard */,
+				B2DFBC381EC44133002C7084 /* Info.plist */,
+			);
+			path = BurgerProject;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B2DFBC281EC44133002C7084 /* BurgerProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2DFBC3B1EC44133002C7084 /* Build configuration list for PBXNativeTarget "BurgerProject" */;
+			buildPhases = (
+				7A504C908DDA5F31B1C29402 /* [CP] Check Pods Manifest.lock */,
+				B2DFBC251EC44133002C7084 /* Sources */,
+				B2DFBC261EC44133002C7084 /* Frameworks */,
+				B2DFBC271EC44133002C7084 /* Resources */,
+				62202FE10B531EA8E129C650 /* [CP] Embed Pods Frameworks */,
+				EC46C5C5F1818AC43B6044BF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BurgerProject;
+			productName = BurgerProject;
+			productReference = B2DFBC291EC44133002C7084 /* BurgerProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B2DFBC211EC44133002C7084 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = xcoder.solutions;
+				TargetAttributes = {
+					B2DFBC281EC44133002C7084 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B2DFBC241EC44133002C7084 /* Build configuration list for PBXProject "BurgerProject" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B2DFBC201EC44133002C7084;
+			productRefGroup = B2DFBC2A1EC44133002C7084 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B2DFBC281EC44133002C7084 /* BurgerProject */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B2DFBC271EC44133002C7084 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2DFBC371EC44133002C7084 /* LaunchScreen.storyboard in Resources */,
+				B2DFBC341EC44133002C7084 /* Assets.xcassets in Resources */,
+				B2DFBC321EC44133002C7084 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		62202FE10B531EA8E129C650 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BurgerProject/Pods-BurgerProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A504C908DDA5F31B1C29402 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EC46C5C5F1818AC43B6044BF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BurgerProject/Pods-BurgerProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B2DFBC251EC44133002C7084 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2DFBC431EC44A14002C7084 /* Utils.swift in Sources */,
+				B2DFBC3F1EC442AF002C7084 /* MainNavigationController.swift in Sources */,
+				B2DFBC2F1EC44133002C7084 /* ViewController.swift in Sources */,
+				B2DFBC2D1EC44133002C7084 /* AppDelegate.swift in Sources */,
+				B2DFBC411EC44855002C7084 /* SideMenuTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B2DFBC301EC44133002C7084 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2DFBC311EC44133002C7084 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B2DFBC351EC44133002C7084 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2DFBC361EC44133002C7084 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B2DFBC391EC44133002C7084 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B2DFBC3A1EC44133002C7084 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B2DFBC3C1EC44133002C7084 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8B740157B796261623B2123 /* Pods-BurgerProject.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BurgerProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xcoder.solutions.BurgerProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B2DFBC3D1EC44133002C7084 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E91579EFCD30F0CA1DCA7C49 /* Pods-BurgerProject.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BurgerProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xcoder.solutions.BurgerProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B2DFBC241EC44133002C7084 /* Build configuration list for PBXProject "BurgerProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2DFBC391EC44133002C7084 /* Debug */,
+				B2DFBC3A1EC44133002C7084 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2DFBC3B1EC44133002C7084 /* Build configuration list for PBXNativeTarget "BurgerProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2DFBC3C1EC44133002C7084 /* Debug */,
+				B2DFBC3D1EC44133002C7084 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B2DFBC211EC44133002C7084 /* Project object */;
+}
